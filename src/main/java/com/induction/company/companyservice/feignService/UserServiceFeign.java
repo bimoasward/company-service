@@ -9,6 +9,6 @@ import com.induction.company.companyservice.dto.UserDTO;
 @FeignClient(name = "user-service")
 public interface UserServiceFeign {
 
-	@GetMapping("/api/v1/user-service/{id}")
+	@GetMapping("/get/getById/{id}")
 	UserDTO getById(@PathVariable(value = "id") Long id);
 }
